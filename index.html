@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<!--a) Piedra, papel, tijeras, lagarto o Spock:
+     el usuario elegirá una de esas cinco opciones, 
+     recibirá una respuesta al azar y comprobará (reglas)
+      si ha ganado, perdido o empatado contra la máquina.
+ -->
+ <style>
+    #formato {
+        margin-left: 10cm;
+        margin-right: 10cm;
+        margin-top: 1cm;
+
+    }
+</style>
+<body>
+
+    <div id="formato" align="center" class="alert alert-warning">
+        <a href="../inicio.html" class="btn btn-info">Inicio</a>
+
+    </div>
+  
+
+    <p>
+        <div>
+            <form align="center" class="alert alert-success" action="juego.php" method="post" name="formulario">
+                <h1>Pulsa un boton para jugar</h1>
+                <button class="btn btn-primary" name="juego" id="piedra" value="piedra">Piedra</button> 
+                <button class="btn btn-secondary" name="juego" id="papel" value="papel">Papel</button>
+                <button class="btn btn-success" name="juego" id="tijera" value="tijera">Tijera</button>
+                <button class="btn btn-danger" name="juego" id="lagarto" value="lagarto">Lagarto</button>
+                <button class="btn btn-warning" name="juego" id="spock" value="spock">Spock</button>
+
+            </form>
+        </div>
+
+    </p>
+    <div id="formato" class="alert alert-primary">
+        <p align=right>Jose Ramon Cardenas Gomez</p>
+        <p align=right>2º DAW</p>
+
+    </div>
+</body>
+
+</html>
